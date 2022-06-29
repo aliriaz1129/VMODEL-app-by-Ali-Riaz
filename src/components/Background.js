@@ -5,8 +5,8 @@ import { theme } from '../core/theme'
 export default function Background({ children }) {
   return (
     <ImageBackground
-      source={require('../assets/background_dot.png')}
-      resizeMode="repeat"
+      source={require('../assets/downloa.jpg')}
+      //resizeMode="no-repeat"
       style={styles.background}
     >
       <KeyboardAvoidingView style={styles.container} behavior="padding">
@@ -18,9 +18,11 @@ export default function Background({ children }) {
 
 const styles = StyleSheet.create({
   background: {
-    flex: 1,
     width: '100%',
     backgroundColor: theme.colors.surface,
+    flex:1,
+    justifyContent:"flex-end",
+    backgroundRepeat:"no-repeat",
   },
   container: {
     flex: 1,
